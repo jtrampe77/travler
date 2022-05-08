@@ -1,0 +1,713 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 100%;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* NAV */
+nav{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+   
+}
+.menu, nav form{
+    display: none;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.travler{
+    display: flex;
+    flex-wrap: wrap;
+}
+.travler img{
+    align-self: center;
+}
+
+nav i{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6017a3;
+}
+nav h1{
+    color: #6017a3;
+    font-size: 57px;
+    margin: 0;
+    font-weight: 800;
+}
+nav h2{
+    color: #7d7d7d;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+
+
+
+/* HEADER */
+header{
+    background-image: url(../img/header1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    
+}
+header h2{
+    color: #fff;
+    position: absolute;
+    font-size: 34px;
+    font-weight: bold;
+    left: 15%;
+    width: 75%;
+    text-align: center;
+}
+header h3{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    font-size: 20px;
+    color: #fff;
+    font-weight: lighter;
+} 
+
+
+
+/* MAIN */
+main{
+    background-color: #ebebeb;
+}
+.map-section{
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 2rem;
+}
+.map-section h3 + img{
+    display:none;
+}
+.map-section h2, .map-section h3{
+    text-align: center; 
+    font-weight: 300;
+} 
+.map-section h2{
+    font-size: 36px;
+    margin: 0;
+   
+}
+.map-section h3{
+    font-size: 14px;
+    margin: 0;
+}
+.map-section section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.map-section section img{
+    flex-basis: 50%;
+    align-self: center;
+}
+.map-section section h4{
+    font-size: 36px;
+    margin: 0;
+    font-weight: 300;
+}
+.map-section section p{
+    margin: 0;
+}
+
+.ipad-section{
+    display: none;
+}
+
+
+/* Desctription section */
+.description-section{
+    margin-top: 1rem;
+}
+.description-section h2, .description-section h3{
+    text-align: center;
+    margin: 0;
+    color: #939393;
+    font-weight: 300;
+}
+.description-section h2{font-size: 36px;}
+.description-section h3{font-size: 14px; font-weight: 300;}
+
+.creators{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.creators div{
+    flex-basis: 40%;
+    margin: 1rem;
+}
+.creators h4, .creators h5{
+    margin: 0;
+    color: #7b7b7b;
+}
+.creators h4{font-size: 18px;}
+.creators h5{font-size: 14px;}
+
+.slider{
+    width: 100%;
+    text-align: center;
+}
+
+/* AWARDS */
+.features section{
+    background-color: #fff;
+    margin: 2rem;
+    padding: 1.5rem;
+}
+.features h3{
+    font-size: 30px;
+    margin: 0;
+}
+.features h4, .features p{
+    font-size: 16px;
+    margin: 0;
+}
+.features h4{color: #6017a3;}
+
+
+/* FOOTER */
+footer{
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 2rem;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem;
+}
+footer p{
+    font-size: 12px;
+    color: #777777;
+}
+footer .logo{
+    width: 50%;
+    flex-wrap: wrap;
+}
+footer h1{
+    color: #fff;
+    font-size: 57px;
+    margin: 0;
+    font-weight: 800;
+}
+footer h2{
+    color: #7d7d7d;
+    font-size: 14px;
+    margin: 0;
+}
+
+.more-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.more-menu a
+.more-menu a:hover{
+    border-bottom: 5px solid #6017a3;
+}
+
+.socMed-menu{
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+
+
+/* TABLET */
+@media(min-width:768px){    
+    .menu a{
+        text-decoration: none;
+        color: #707070;
+        font-weight: 300;
+    }
+
+    .menu{
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(6, 1fr);
+        list-style: none;
+        padding: 0;
+        margin-top: 2em;
+        text-align: center;
+    }
+    .menu a:hover{
+        color: #6017a3;
+    }
+    .nav1 i {
+        display: none;
+    }
+  
+
+    /* HEADER */
+    header{
+        height: 50vh;
+    }
+    header h2{
+        top: 25%;
+        left: 25%;
+        width: 50%;
+    }
+    header h3{
+        left: 35%;
+        top: 50%;
+    }
+
+    /* MAIN */
+    .map-section h3 + img{
+        display:block;
+    }
+    .map-section section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .map-section section img{
+        flex-basis: 10%;
+    }
+    .map-section section div{
+        flex-basis: 80%;
+        margin-left: 1rem;
+    }
+
+    /* Description Creators */
+    .creators{
+        justify-content: center;
+    }
+    .creators div{
+        flex-basis: 30%;
+        justify-content: center; 
+    }
+    .creators img{
+        align-self: center;
+    }
+
+    /* FEATURES */
+    .features{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .col-2{
+        flex-basis: 40%;
+    }
+
+
+    /* FOOTER */
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .travler-description{
+        flex-basis: 40%;
+    }
+    .more-info{
+        flex-basis: 50%;
+    }
+
+}
+
+
+/* DESKTOP */
+@media(min-width:1020px){
+    nav, main div, footer{
+        width: 960px;
+        margin: 0 auto;
+    }
+    main .darkBG{
+        width: 100%;
+        background-color: #2d2d2d;
+    }
+    .nav1 form{
+        display: block;
+    }
+    .menu li{
+        border: 1px solid #d4d4d4;
+        padding: 1rem;
+    }
+    .menu{
+        grid-gap: 0;
+    }
+
+    /* HEADER */
+    header{
+        height: 70vh;
+    }
+    header h2{
+        width: 20%;
+        left: 40%;
+        top: 40%;
+    }
+    header h3{
+        top: 60%;
+        left: 43%;
+    }
+    /* MAIN */
+    .info-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .map-section section{
+        width: 30%;
+    }
+
+    .ipad-section{
+        display: block;
+        position: relative;
+    }
+    .ipad-section h4{
+        position: absolute;
+        top: 60%;
+        left: 30%;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 100;
+    }
+    .ipad-section h5{
+        position: absolute;
+        top: 80%;
+        left: 43%;
+        font-size: 10px;
+        color: #fff;
+        font-weight: 100;
+    }
+
+    .creators{
+        flex-wrap: nowrap;  
+    }
+
+    /* FOOTER */
+    .travler-description{
+        width: 50%;
+    }
+    footer .travler{
+        width: 70%;
+        margin-left: 0;
+    }
+    footer a:hover{
+        color: #000;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    /* overflow: hidden; */
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       /* (-webkit-min-device-pixel-ratio: 1.25), */
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        /* -webkit-box-shadow: none !important; */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
